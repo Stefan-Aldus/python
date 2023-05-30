@@ -61,6 +61,6 @@ while True:
     elif counter != 10:
         print("Invalid conversion entered")
         counter += 1
-    else:
+    else:``
         print("Too many wrong inputs entered by user, program is being stopped")
         quit("The program has been stopped with error code: 2")
