@@ -68,7 +68,7 @@ while True:
     if (
         snake.left < 0
         or snake.right > window
-        or snake.top < 0``
+        or snake.top < 0
         or snake.bottom > window
         or len(segments) != len(set(segments))
     ):
