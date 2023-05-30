@@ -29,11 +29,12 @@ pg.init()
 screen = pg.display.set_mode((window, window))
 clock = pg.time.Clock()
 
+# Loop
 while True:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             exit()
-
+        # Checks the key pressed and sets the movement direction
         if event.type == pg.KEYDOWN:
             if event.key == pg.K_w and movement_dir != (0, size):
                 movement_dir = (0, -size)
@@ -43,8 +44,9 @@ while True:
                 movement_dir = (-size, 0)
             if event.key == pg.K_d and movement_dir != (-size, 0):
                 movement_dir = (size, 0)
-
-    screen.fill("black")
+                
+    # Makes the screen pink
+    screen.fill("pink")
 
     # Making the pears
     pg.draw.rect(screen, 'green', food)
